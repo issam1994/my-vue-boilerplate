@@ -10,7 +10,9 @@ export default {
   methods: {
     ...mapMutations("auth", ["saveToken"]),
     login() {
-      this.saveToken("FAKETOKENXXX");
+        //this feature is just for testing, obviously.
+      this.saveToken("FAKE-TOKEN-XXX");
+      //if no token exists in the store, pushing profile will lead to a redirection to login page
       this.$router.push("./profile");
     }
   }
