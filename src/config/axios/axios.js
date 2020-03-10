@@ -1,6 +1,6 @@
 import axios from 'axios'
 import store from '../../store'
-import keys from '../../../keys'
+import keys from '../../keys'
 
 //setting base url for the api
 axios.defaults.baseURL = keys.apiUrl
