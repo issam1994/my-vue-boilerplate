@@ -7,7 +7,7 @@ axios.defaults.baseURL = keys.apiUrl
 
 //intercept api calls to attach the token automatically
 axios.interceptors.request.use((config) => {
-    let {token} = store.state;
+    let {token} = store.state.auth;
     config.headers[keys.tokenHeader] = token;
     return config;
   });

@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <header class="shadow">
     <div class="nav container mx-auto">
       <!-- if user is authenticated -->
       <div class="nav-links" v-if="isAuthenticated">
@@ -13,6 +14,7 @@
         <router-link class="nav-link" to="/register">Register</router-link>
       </div>
     </div>
+    </header>
     <div class="container mx-auto">
       <router-view />
     </div>
@@ -38,16 +40,16 @@ export default {
   color: #2c3e50;
 }
 .nav {
-  @apply shadow mb-2;
+  @apply mb-2;
 }
 .nav-links {
-  @apply flex;
+  @apply flex items-center;
 }
 .nav-link {
   @apply px-4 py-6 font-bold border-b-4 border-white;
 }
 .logout-button {
-  @apply px-4 py-6 font-bold ml-auto bg-red-500 text-white;
+  @apply px-4 py-3 font-bold ml-auto bg-gray-100 text-gray-800 shadow-inner;
 }
 .router-link-exact-active {
   @apply text-green-600 border-b-4 border-green-600;
