@@ -1,0 +1,22 @@
+/* fade animation  */
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+/* slide animation  */
+.slide-enter {
+  opacity: 0;
+  margin-left: -45px;
+}
+.slide-leave-to {
+  opacity: 0;
+  margin-left: 45px;
+}
+.slide-enter-active,
+.slide-leave-active {
+  transition: margin 0.3s ease, opacity 0.3s ease;
+}

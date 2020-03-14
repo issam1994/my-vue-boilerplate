@@ -2,8 +2,9 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-//tailwindcss
+//css
 import '@/assets/css/tailwindcss.css'
+import '@/assets/css/transitions.css'
 //axios config
 import './config/axios/axios'
 //router beforeEach middleware

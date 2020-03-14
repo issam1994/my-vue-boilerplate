@@ -16,10 +16,13 @@
     </div>
     </header>
     <div class="container mx-auto">
+      <transition name="slide" mode="out-in">
       <router-view />
+      </transition>
     </div>
   </div>
 </template>
+
 <script>
 import { mapGetters, mapActions } from "vuex";
 export default {
