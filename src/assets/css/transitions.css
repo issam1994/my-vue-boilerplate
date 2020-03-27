@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 /* fade animation  */
 .fade-enter,
 .fade-leave-to {
@@ -20,3 +21,4 @@
 .slide-leave-active {
   transition: margin 0.3s ease, opacity 0.3s ease;
 }
+/* purgecss end ignore */

@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- header  -->
     <header class="shadow">
     <div class="nav container mx-auto">
       <!-- if user is authenticated -->
@@ -15,6 +16,7 @@
       </div>
     </div>
     </header>
+    <!-- pages -->
     <div class="container mx-auto">
       <transition name="slide" mode="out-in">
       <router-view />
